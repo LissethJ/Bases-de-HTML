@@ -39,7 +39,10 @@
         <li><a href="index.html#tablas">Tablas</a></li>
         <li><a href="index.html#enlaces">Enlaces</a></li>
         <li><a href="index.html#elementos-interactivos">Elementos interactivos</a></li>
-        <li><a href=""></a></li>
+        <li><a href="index.html#audio-video">Audio y Video</a></li>
+        <li><a href="index.html#iframes">Iframes</a></li>
+        <li><a href="index.html#iforms">Formularios</a></li>
+        <li><a href="index.html#atributos-formularios">Atributos de Formularios</a></li>
     </ul>
      <hr>
     <h2 id="encabezados">Encabezados de HTML</h2>
@@ -269,8 +272,20 @@
     <br>
     <a href="index.html#inicio">Arriba</a>
     <br>
+    <hr>
     <h2 id="elementos-nteractivos">Elementos Interactivos</h2>
     <button onclick="alert('Hola haz cliqueado este boton')">Este es un boton</button>
+    <details open>
+        <summary>Titulo del acordeon</summary>
+        <article>
+            <h3>contenido del acordeon</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi id porro voluptatem blanditiis commodi dolores at. Eos culpa ut quas recusandae minima alias quaerat, necessitatibus, deleniti ex vel ullam hic!</p>
+            <img src="img/dog in sunset.jpeg" alt="Perro en puesta de sol">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dolore, illo magni, assumenda odit possimus fugiat et ex quas impedit aspernatur iure doloremque voluptates atque tempore eos optio cumque similique.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione rerum excepturi voluptatibus voluptatum praesentium maxime, in quis dolor! Sit minima debitis, repellendus repellat in autem aliquam cum obcaecati nam iste!</p>
+        </article>
+    </details>
+    <br>
     <details>
         <summary>Titulo del acordeon</summary>
         <article>
@@ -282,8 +297,89 @@
         </article>
     </details>
     <br>
+    <dialog open>
+        Esta es una ventana modal en HTML 
+    </dialog>
+    <hr>
+    <h2 id="audio-video">Audio y Video</h2>
+        <audio src="media/ringtones-pato-donald.mp3" controls></audio>
+    <a href="index.html#inicio">Arriba</a>
+    <br>
+    <hr>
+    <h2 id="iframes">Iframes</h2>
+    <iframe></iframe>
     <a href="index.html#inicio">Arriba</a>
     <hr>
+    <h2 id="forms">Formularios</h2>
+    <h3>Elementos de formularios</h3>
+    <input type="text">
+    <br>
+    <input type="checkbox">
+    <br>
+    <input type="radio">
+    <br>
+    <input type="date">
+    <br>
+    <input type="color">
+    <br>
+    <input type="button" value="boton">
+    <br>
+    <input type="submit">
+    <br>
+    <input type="reset">
+    <br>
+    <input type="file">
+    <br>
+    <input type="file" multiple>
+    <br>
+    <input type="hidden" name="idioma" value="es">
+    <br>
+    <input type="email">
+    <br>
+    <input type="number">
+    <br>
+    <input type="tel">
+    <br>
+    <input type="password">
+    <br>
+    <input type="search">
+    <br>
+    <textarea cols="50" rows="5"></textarea>
+    <br>
+    <select name="" id="" multiple>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+        <option>PHP</option>
+        <option>Python</option>
+    </select>
+    <br>
+    <a href="index.html#inicio">Arriba</a>
+    <hr>
+    <h2 id="atributos-formularios">Atributos de Formularios</h2>
+    <input type="text"  value="lissethj" readonly disabled>
+    <br>
+    <input type="text" placeholder="escribe tu nombre">
+    <br>
+    <h3>Ejemplo de Formulario</h3>
+    <h4>Formulario de login</h4>
+    <form action="https://jonmircha.com/">
+        <label for="usuario">Usuario:</label>
+        <!--https://jonmircha.com/?usuario=hsgstrsa-->
+        <!--el nombre del id lo pongo igual al de for del label para vincularlo, entonces cuando haga clic en el label usuario de la pagina se va a activar el recuadro del mismo para completar los datos del usuario-->
+        <input type="text" name="usuario" id="usuario" placeholder="escribe tu usuario" required pattern="^[A-Za-z]+$" title="el campo solo acepta letras">
+        <br>
+        <label for="password">Password:</label>
+        <!--https://jonmircha.com/?usuario=gfrsddggg&password=dfrgt5674543-->
+        <input type="password" name="password" id="password" placeholder="escribe tu password" required>
+        <br>
+        <input type="submit">
+        <br>
+        <input type="reset">
+    </form>
+    <a href="index.html#inicio">Arriba</a>
+
+
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <script>
